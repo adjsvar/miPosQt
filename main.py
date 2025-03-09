@@ -18,6 +18,7 @@ from ui.caja import Caja
 from ui.inventario import Inventario
 from ui.clientes import Clientes
 from ui.informes import Informes
+from ui.balance import Balance
 
 
 def cargar_sesion():
@@ -86,11 +87,13 @@ class MainSection(QWidget):
         self.page_inventario = Inventario()
         self.page_clientes = Clientes()
         self.page_informes = Informes()
+        self.page_balance = Balance()
 
         self.content.addWidget(self.page_caja)
         self.content.addWidget(self.page_inventario)
         self.content.addWidget(self.page_clientes)
         self.content.addWidget(self.page_informes)       
+        self.content.addWidget(self.page_balance)
 
         # Footer
         self.footer = Footer()
@@ -161,6 +164,7 @@ class MainWindow(QMainWindow):
             "Inventario": {},
             "Clientes": {},
             "Informes": {},
+            "Balance": {},
         }
 
         if pagina == "Caja":
@@ -175,6 +179,8 @@ class MainWindow(QMainWindow):
             self.main_section.content.setCurrentWidget(self.main_section.page_clientes)
         elif pagina == "Informes":
             self.main_section.content.setCurrentWidget(self.main_section.page_informes)
+        elif pagina == "Balance":
+            self.main_section.content.setCurrentWidget(self.main_section.page_balance)
 
         # Actualizar la selección visual en el Sidebar
         self.sidebar.select_button(pagina)

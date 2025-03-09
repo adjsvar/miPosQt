@@ -75,7 +75,7 @@ class Sidebar(QWidget):
 
         # Botones principales
         self.buttons = {}
-        button_names = ["Caja", "Inventario", "Clientes", "Informes"]
+        button_names = ["Caja", "Inventario", "Clientes", "Informes", "Balance"]
         for name in button_names:
             button = QPushButton(name)
             button.setFixedHeight(50)
