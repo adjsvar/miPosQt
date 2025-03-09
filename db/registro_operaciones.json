@@ -68,5 +68,13 @@
         "monto": 453456345.0,
         "nota": "fdgsdf",
         "fecha": "2025-01-24 19:36:21"
+    },
+    {
+        "num_session": "20250125-135321",
+        "tipo": "ingreso",
+        "cuenta": "efectivo",
+        "monto": 12500.0,
+        "nota": "se pago deuda",
+        "fecha": "2025-03-09 00:33:20"
     }
 ]

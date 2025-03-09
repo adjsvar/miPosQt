@@ -455,7 +455,9 @@ class Caja(QWidget):
             self.registrar_operacion(gasto)
 
     def registrar_operacion(self, operacion):
+        """Registra la operación utilizando el nuevo formato."""
         tipo = operacion.get("tipo")
+        cuenta = operacion.get("cuenta", "efectivo")  # Nuevo campo de cuenta
         monto = operacion.get("monto")
         nota = operacion.get("nota", "")
 
@@ -470,8 +472,9 @@ class Caja(QWidget):
             registros = []
 
         nueva_operacion = {
-            "num_session": self.num_session,  # Usar self.num_session
+            "num_session": self.num_session,
             "tipo": tipo,
+            "cuenta": cuenta,  # Agregado el campo cuenta
             "monto": monto,
             "nota": nota,
             "fecha": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -482,7 +485,7 @@ class Caja(QWidget):
         try:
             with open(ruta_op, "w", encoding="utf-8") as f:
                 json.dump(registros, f, indent=4, ensure_ascii=False)
-            self.mostrar_mensaje(f"OPERACIÓN DE {tipo.upper()} REGISTRADA.", "success")
+            self.mostrar_mensaje(f"OPERACIÓN DE {tipo.upper()} REGISTRADA EN {cuenta.upper()}.", "success")
         except IOError:
             self.mostrar_mensaje("ERROR AL REGISTRAR OPERACIÓN.", "error")
 
@@ -619,6 +622,9 @@ class Caja(QWidget):
             self.mostrar_mensaje("ERROR AL GUARDAR TICKET.", "error")
 
     def actualizar_inventario(self, productos_vendidos):
+        """
+        Actualiza el inventario restando las cantidades vendidas.
+        """
         ruta_invent = "./db/inventario.json"
         try:
             with open(ruta_invent, "r", encoding='utf-8') as f:
@@ -674,4 +680,3 @@ class Caja(QWidget):
     def focusInEvent(self, event):
         super().focusInEvent(event)
         self.focus_on_entry()
-

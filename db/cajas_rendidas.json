@@ -366,5 +366,35 @@
         "egresos": 0.0,
         "ingresos_detalle": [],
         "egresos_detalle": []
+    },
+    {
+        "num_session": "20250125-135321",
+        "cajero": "Odelis",
+        "fecha": "2025-03-09 00:33:39",
+        "notas": {
+            "SALDO SUBE": 14154.0,
+            "SALDO LG": 5454.0,
+            "BBVA": 554.0,
+            "MERCADOPAGO": 55454.0,
+            "EFECTIVO": 5454.0
+        },
+        "total": 5.0,
+        "efectivo": 5.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 12500.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [
+            {
+                "num_session": "20250125-135321",
+                "tipo": "ingreso",
+                "cuenta": "efectivo",
+                "monto": 12500.0,
+                "nota": "se pago deuda",
+                "fecha": "2025-03-09 00:33:20"
+            }
+        ],
+        "egresos_detalle": []
     }
 ]

@@ -205,7 +205,7 @@ def main():
 
     # Crear ventana principal
     window = MainWindow()
-    window.showFullScreen()
+    window.showMaximized()  # Iniciar maximizado en lugar de pantalla completa
     sys.exit(app.exec_())
 
 

@@ -5,7 +5,8 @@ import os
 from datetime import datetime
 from PyQt5.QtWidgets import (
     QWidget, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QPushButton,
-    QTableWidget, QTableWidgetItem, QHeaderView, QMessageBox, QGridLayout
+    QTableWidget, QTableWidgetItem, QHeaderView, QMessageBox, QGridLayout,
+    QInputDialog
 )
 from PyQt5.QtGui import QFont, QDoubleValidator, QColor
 from PyQt5.QtCore import Qt
@@ -34,17 +35,15 @@ class Balance(QWidget):
         grid_layout.setSpacing(20)
         layout.addLayout(grid_layout)
 
-        # Etiquetas para las cuentas
+        # Etiquetas para las cuentas - CAMBIO: de "BBVA" y "MercadoPago" a "Dinero en Cuenta"
         self.crear_etiqueta_cuenta("Efectivo", 0, 0, grid_layout)
-        self.crear_etiqueta_cuenta("MercadoPago", 0, 1, grid_layout)
-        self.crear_etiqueta_cuenta("BBVA", 0, 2, grid_layout)
-        self.crear_etiqueta_cuenta("Total", 0, 3, grid_layout)
+        self.crear_etiqueta_cuenta("Dinero en Cuenta", 0, 1, grid_layout)
+        self.crear_etiqueta_cuenta("Total", 0, 2, grid_layout)
 
         # Labels para mostrar los saldos
         self.efectivo_label = self.crear_label_saldo(1, 0, grid_layout)
-        self.mercadopago_label = self.crear_label_saldo(1, 1, grid_layout)
-        self.bbva_label = self.crear_label_saldo(1, 2, grid_layout)
-        self.total_label = self.crear_label_saldo(1, 3, grid_layout, is_total=True)
+        self.dinero_cuenta_label = self.crear_label_saldo(1, 1, grid_layout)
+        self.total_label = self.crear_label_saldo(1, 2, grid_layout, is_total=True)
 
         # Grid para editar los saldos
         edit_grid = QGridLayout()
@@ -59,13 +58,11 @@ class Balance(QWidget):
 
         # Etiquetas para editar
         self.crear_etiqueta_cuenta("Efectivo", 0, 0, edit_grid)
-        self.crear_etiqueta_cuenta("MercadoPago", 0, 1, edit_grid)
-        self.crear_etiqueta_cuenta("BBVA", 0, 2, edit_grid)
+        self.crear_etiqueta_cuenta("Dinero en Cuenta", 0, 1, edit_grid)
 
         # Inputs para editar los saldos
         self.efectivo_input = self.crear_input_saldo(1, 0, edit_grid)
-        self.mercadopago_input = self.crear_input_saldo(1, 1, edit_grid)
-        self.bbva_input = self.crear_input_saldo(1, 2, edit_grid)
+        self.dinero_cuenta_input = self.crear_input_saldo(1, 1, edit_grid)
 
         # Botón para guardar cambios
         guardar_button = QPushButton("Guardar Cambios")
@@ -93,8 +90,8 @@ class Balance(QWidget):
 
         # Tabla de historial
         self.historial_table = QTableWidget()
-        self.historial_table.setColumnCount(5)
-        self.historial_table.setHorizontalHeaderLabels(["Fecha", "Efectivo", "MercadoPago", "BBVA", "Nota"])
+        self.historial_table.setColumnCount(4)
+        self.historial_table.setHorizontalHeaderLabels(["Fecha", "Efectivo", "Dinero en Cuenta", "Nota"])
         self.historial_table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.historial_table.verticalHeader().setVisible(False)
         self.historial_table.setFont(QFont("Arial", 14))
@@ -179,15 +176,19 @@ class Balance(QWidget):
 
     def actualizar_ui(self):
         """Actualiza la interfaz con los datos de balance actuales."""
+        # Inicializar claves si no existen
+        if "efectivo" not in self.balance_data:
+            self.balance_data["efectivo"] = 0.0
+        if "dinero_cuenta" not in self.balance_data:
+            self.balance_data["dinero_cuenta"] = 0.0
+            
         efectivo = self.balance_data.get("efectivo", 0)
-        mercadopago = self.balance_data.get("mercadopago", 0)
-        bbva = self.balance_data.get("bbva", 0)
-        total = efectivo + mercadopago + bbva
+        dinero_cuenta = self.balance_data.get("dinero_cuenta", 0)
+        total = efectivo + dinero_cuenta
 
         # Actualizar labels
         self.efectivo_label.setText(f"${efectivo:.2f}")
-        self.mercadopago_label.setText(f"${mercadopago:.2f}")
-        self.bbva_label.setText(f"${bbva:.2f}")
+        self.dinero_cuenta_label.setText(f"${dinero_cuenta:.2f}")
         self.total_label.setText(f"${total:.2f}")
 
         # Cargar historial
@@ -209,38 +210,38 @@ class Balance(QWidget):
             efectivo_item.setTextAlignment(Qt.AlignCenter)
             self.historial_table.setItem(i, 1, efectivo_item)
 
-            # MercadoPago
-            mp_item = QTableWidgetItem(f"${ajuste.get('mercadopago', 0):.2f}")
-            mp_item.setTextAlignment(Qt.AlignCenter)
-            self.historial_table.setItem(i, 2, mp_item)
-
-            # BBVA
-            bbva_item = QTableWidgetItem(f"${ajuste.get('bbva', 0):.2f}")
-            bbva_item.setTextAlignment(Qt.AlignCenter)
-            self.historial_table.setItem(i, 3, bbva_item)
+            # Dinero en Cuenta
+            dinero_cuenta_item = QTableWidgetItem(f"${ajuste.get('dinero_cuenta', 0):.2f}")
+            dinero_cuenta_item.setTextAlignment(Qt.AlignCenter)
+            self.historial_table.setItem(i, 2, dinero_cuenta_item)
 
             # Nota
             nota_item = QTableWidgetItem(ajuste.get("nota", ""))
             nota_item.setTextAlignment(Qt.AlignCenter)
-            self.historial_table.setItem(i, 4, nota_item)
+            self.historial_table.setItem(i, 3, nota_item)
 
     def guardar_cambios(self):
         """Procesa y guarda los cambios en los balances."""
         try:
             # Obtener los nuevos valores (si se ingresaron)
             nuevo_efectivo = self.efectivo_input.text().strip()
-            nuevo_mercadopago = self.mercadopago_input.text().strip()
-            nuevo_bbva = self.bbva_input.text().strip()
+            nuevo_dinero_cuenta = self.dinero_cuenta_input.text().strip()
 
             # Si no se ingresó ningún valor, mostrar mensaje y salir
-            if not nuevo_efectivo and not nuevo_mercadopago and not nuevo_bbva:
+            if not nuevo_efectivo and not nuevo_dinero_cuenta:
                 QMessageBox.warning(self, "Aviso", "No se ingresó ningún valor para ajustar.")
                 return
 
-            # Pedir una nota para el registro
-            nota, ok = QMessageBox.getText(self, "Nota", "Ingrese una nota para este ajuste:")
+            # Pedir una nota para el registro mediante QInputDialog
+            nota, ok = QInputDialog.getText(self, "Nota", "Ingrese una nota para este ajuste:")
             if not ok:
                 return
+
+            # Inicializar valores en caso de que no existan en el balance_data
+            if "efectivo" not in self.balance_data:
+                self.balance_data["efectivo"] = 0.0
+            if "dinero_cuenta" not in self.balance_data:
+                self.balance_data["dinero_cuenta"] = 0.0
 
             # Actualizar valores sólo si se ingresaron
             cambios = False
@@ -248,12 +249,8 @@ class Balance(QWidget):
                 self.balance_data["efectivo"] = float(nuevo_efectivo)
                 cambios = True
             
-            if nuevo_mercadopago:
-                self.balance_data["mercadopago"] = float(nuevo_mercadopago)
-                cambios = True
-            
-            if nuevo_bbva:
-                self.balance_data["bbva"] = float(nuevo_bbva)
+            if nuevo_dinero_cuenta:
+                self.balance_data["dinero_cuenta"] = float(nuevo_dinero_cuenta)
                 cambios = True
 
             # Si hubo cambios, agregar al historial
@@ -262,8 +259,7 @@ class Balance(QWidget):
                 registro = {
                     "fecha": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                     "efectivo": self.balance_data["efectivo"],
-                    "mercadopago": self.balance_data["mercadopago"],
-                    "bbva": self.balance_data["bbva"],
+                    "dinero_cuenta": self.balance_data["dinero_cuenta"],
                     "nota": nota
                 }
                 
@@ -281,8 +277,7 @@ class Balance(QWidget):
                 
                 # Limpiar inputs
                 self.efectivo_input.clear()
-                self.mercadopago_input.clear()
-                self.bbva_input.clear()
+                self.dinero_cuenta_input.clear()
                 
                 QMessageBox.information(self, "Éxito", "Balances actualizados correctamente.")
         
@@ -299,8 +294,7 @@ class Balance(QWidget):
                 # Si no existe el archivo, crear uno con valores iniciales
                 balance_inicial = {
                     "efectivo": 0.0,
-                    "mercadopago": 0.0,
-                    "bbva": 0.0,
+                    "dinero_cuenta": 0.0,
                     "historial": []
                 }
                 with open(ruta_balance, "w", encoding="utf-8") as file:
@@ -308,10 +302,36 @@ class Balance(QWidget):
                 return balance_inicial
             else:
                 with open(ruta_balance, "r", encoding="utf-8") as file:
-                    return json.load(file)
+                    balance = json.load(file)
+                    
+                # Convertir de formato antiguo a nuevo si es necesario
+                if "mercadopago" in balance and "bbva" in balance:
+                    dinero_cuenta = balance.get("mercadopago", 0) + balance.get("bbva", 0)
+                    balance["dinero_cuenta"] = dinero_cuenta
+                    # Eliminar claves antiguas
+                    if "mercadopago" in balance:
+                        del balance["mercadopago"]
+                    if "bbva" in balance:
+                        del balance["bbva"]
+                    
+                    # Actualizar histórico si existe
+                    if "historial" in balance:
+                        for registro in balance["historial"]:
+                            if "mercadopago" in registro and "bbva" in registro:
+                                registro["dinero_cuenta"] = registro.get("mercadopago", 0) + registro.get("bbva", 0)
+                                if "mercadopago" in registro:
+                                    del registro["mercadopago"]
+                                if "bbva" in registro:
+                                    del registro["bbva"]
+                                    
+                    # Guardar cambios
+                    with open(ruta_balance, "w", encoding="utf-8") as file:
+                        json.dump(balance, file, indent=4)
+                        
+                return balance
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Error al cargar balance: {str(e)}")
-            return {"efectivo": 0.0, "mercadopago": 0.0, "bbva": 0.0, "historial": []}
+            return {"efectivo": 0.0, "dinero_cuenta": 0.0, "historial": []}
 
     def guardar_balance(self):
         """Guarda los datos de balance en el archivo JSON."""
