@@ -1,0 +1,370 @@
+[
+    {
+        "num_session": "20250121-172049",
+        "cajero": "Odelis",
+        "fecha": "2025-01-23 22:22:34",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 31800.0,
+        "efectivo": 0.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 31045.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-171936",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 17:20:52",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 5.0,
+        "efectivo": 5.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-171936",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 17:22:21",
+        "notas": {
+            "SALDO SUBE": 5454.0,
+            "SALDO LG": "-no informado-",
+            "BBVA": 5.0,
+            "MERCADOPAGO": 4.0,
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 5.0,
+        "efectivo": 5.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-171936",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 17:32:47",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 5.0,
+        "efectivo": 5.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-171936",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 17:41:58",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 5.0,
+        "efectivo": 5.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-174559",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 17:46:31",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 4005.0,
+        "efectivo": 4005.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-174559",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 17:48:56",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 4005.0,
+        "efectivo": 4005.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-174559",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 17:53:03",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 4005.0,
+        "efectivo": 4005.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-180546",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 18:06:50",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 3755.0,
+        "efectivo": 505.0,
+        "transferencia": 3250.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-180546",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 18:47:27",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 3755.0,
+        "efectivo": 505.0,
+        "transferencia": 3250.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-180546",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 19:09:24",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 3755.0,
+        "efectivo": 505.0,
+        "transferencia": 3250.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-180546",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 19:35:30",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 3755.0,
+        "efectivo": 505.0,
+        "transferencia": 3250.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250124-180546",
+        "cajero": "Odelis",
+        "fecha": "2025-01-24 19:36:24",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 3755.0,
+        "efectivo": 505.0,
+        "transferencia": 3250.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 456345634.0,
+        "egresos": 453456345.0,
+        "ingresos_detalle": [
+            {
+                "num_session": "20250124-180546",
+                "tipo": "ingreso",
+                "monto": 456345634.0,
+                "nota": "fsdfgsdf",
+                "fecha": "2025-01-24 19:36:17"
+            }
+        ],
+        "egresos_detalle": [
+            {
+                "num_session": "20250124-180546",
+                "tipo": "gasto",
+                "monto": 453456345.0,
+                "nota": "fdgsdf",
+                "fecha": "2025-01-24 19:36:21"
+            }
+        ]
+    },
+    {
+        "num_session": "20250124-180546",
+        "cajero": "Odelis",
+        "fecha": "2025-01-25 13:49:23",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 3755.0,
+        "efectivo": 505.0,
+        "transferencia": 3250.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 456345634.0,
+        "egresos": 453456345.0,
+        "ingresos_detalle": [
+            {
+                "num_session": "20250124-180546",
+                "tipo": "ingreso",
+                "monto": 456345634.0,
+                "nota": "fsdfgsdf",
+                "fecha": "2025-01-24 19:36:17"
+            }
+        ],
+        "egresos_detalle": [
+            {
+                "num_session": "20250124-180546",
+                "tipo": "gasto",
+                "monto": 453456345.0,
+                "nota": "fdgsdf",
+                "fecha": "2025-01-24 19:36:21"
+            }
+        ]
+    },
+    {
+        "num_session": "20250125-135321",
+        "cajero": "Odelis",
+        "fecha": "2025-01-25 15:15:04",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 5.0,
+        "efectivo": 5.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    },
+    {
+        "num_session": "20250125-135321",
+        "cajero": "Odelis",
+        "fecha": "2025-01-25 18:33:39",
+        "notas": {
+            "SALDO SUBE": "-no informado-",
+            "SALDO LG": "-no informado-",
+            "BBVA": "-no informado-",
+            "MERCADOPAGO": "-no informado-",
+            "EFECTIVO": "-no informado-"
+        },
+        "total": 5.0,
+        "efectivo": 5.0,
+        "transferencia": 0.0,
+        "posnet": 0.0,
+        "cr\u00e9dito": 0.0,
+        "ingresos": 0.0,
+        "egresos": 0.0,
+        "ingresos_detalle": [],
+        "egresos_detalle": []
+    }
+]

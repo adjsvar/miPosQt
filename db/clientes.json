@@ -1,0 +1,96 @@
+[
+    {
+        "nombre": "Michelly",
+        "deuda": 0.0,
+        "ticketsdeuda": [
+            "20-01-2025-4",
+            "20-01-2025-11",
+            "20-01-2025-16",
+            {
+                "monto": 5000.0,
+                "tipo": "agregar_deuda",
+                "descuento_aplicado": 0.0
+            },
+            {
+                "monto": 1231.0,
+                "tipo": "agregar_deuda",
+                "descuento_aplicado": 0.0
+            },
+            {
+                "monto": 6231.0,
+                "tipo": "pago_deuda"
+            }
+        ],
+        "documento": "95975431",
+        "vip": true
+    },
+    {
+        "nombre": "Adrian",
+        "deuda": 5000.0,
+        "ticketsdeuda": [
+            "20-01-2025-5",
+            "20-01-2025-6",
+            {
+                "monto": 2500.0,
+                "tipo": "agregar_deuda",
+                "descuento_aplicado": 0.0,
+                "descripcion": ""
+            },
+            {
+                "monto": 2500.0,
+                "tipo": "agregar_deuda",
+                "descuento_aplicado": 0.0,
+                "descripcion": "asdasd"
+            }
+        ],
+        "documento": "",
+        "vip": false
+    },
+    {
+        "nombre": "Odelis",
+        "deuda": 4500.0,
+        "ticketsdeuda": [
+            {
+                "monto": 400.0,
+                "tipo": "pago_deuda"
+            }
+        ],
+        "documento": "",
+        "vip": false
+    },
+    {
+        "nombre": "Abad",
+        "deuda": 0.0,
+        "ticketsdeuda": [],
+        "documento": "",
+        "vip": false
+    },
+    {
+        "nombre": "Michelly y Adrian",
+        "deuda": 0.0,
+        "ticketsdeuda": [
+            "20-01-2025-10",
+            "21-01-2025-1",
+            "21-01-2025-2",
+            {
+                "monto": 24250.0,
+                "tipo": "pago_deuda"
+            },
+            "21-01-2025-3",
+            "21-01-2025-3",
+            {
+                "monto": 14490.0,
+                "tipo": "pago_deuda"
+            }
+        ],
+        "documento": "00002",
+        "vip": true
+    },
+    {
+        "nombre": "Odelis y Abad",
+        "deuda": 4550.0,
+        "ticketsdeuda": [],
+        "documento": "00001",
+        "vip": false
+    }
+]

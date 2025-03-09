@@ -1,0 +1,27 @@
+[
+    {
+        "usuario": "Odelis",
+        "password": "0000",
+        "imagen": "./assets/Odelis Mirlan.jpg"
+    },
+    {
+        "usuario": "Michelly Jabir",
+        "password": "0000",
+        "imagen": "./assets/Michelly.jpg"
+    },
+    {
+        "usuario": "Abad",
+        "password": "0000",
+        "imagen": "../assets/anonimo.jpg"
+    },
+    {
+        "usuario": "Adrian",
+        "password": "0000",
+        "imagen": "./assets/Adrian.jpg"
+    },
+    {
+        "usuario": "admin",
+        "password": "emmalucia",
+        "imagen": "./assets/Adrian.jpg"
+    }
+]

@@ -1,0 +1,228 @@
+[
+    {
+        "dia": "21-01-2025",
+        "cajero": "Odelis Mirlan",
+        "articulos": [
+            {
+                "codigo": "7891024034095",
+                "descripcion": "COLGATE KIDS 50G",
+                "cantidad": 10,
+                "precio_unitario": 1850.0,
+                "subtotal": 18500.0
+            },
+            {
+                "codigo": "7795360009307",
+                "descripcion": "IBUPROFENO PEDIATRICO 4% - KLONAL",
+                "cantidad": 1,
+                "precio_unitario": 2900.0,
+                "subtotal": 2900.0
+            }
+        ],
+        "monto": 21400.0,
+        "numero_ticket": "21-01-2025-1",
+        "pagos": [
+            {
+                "metodo": "Cr\u00e9dito",
+                "monto": 21400.0
+            }
+        ],
+        "cambio": 0.0,
+        "num_session": "20250121-172049"
+    },
+    {
+        "dia": "21-01-2025",
+        "cajero": "Odelis Mirlan",
+        "articulos": [
+            {
+                "codigo": "7791293046990",
+                "descripcion": "DOVE SHAMPOO FUSION DE OLEOS 200ML",
+                "cantidad": 1,
+                "precio_unitario": 2850.0,
+                "subtotal": 2850.0
+            }
+        ],
+        "monto": 2850.0,
+        "numero_ticket": "21-01-2025-2",
+        "pagos": [
+            {
+                "metodo": "Cr\u00e9dito",
+                "monto": 2850.0
+            }
+        ],
+        "cambio": 0.0,
+        "num_session": "20250121-172049"
+    },
+    {
+        "dia": "21-01-2025",
+        "cajero": "Odelis Mirlan",
+        "articulos": [
+            {
+                "codigo": "7791293046990",
+                "descripcion": "DOVE SHAMPOO FUSION DE OLEOS 200ML",
+                "cantidad": 1,
+                "precio_unitario": 2850.0,
+                "subtotal": 2850.0
+            },
+            {
+                "codigo": "7791293046990",
+                "descripcion": "DOVE SHAMPOO FUSION DE OLEOS 200ML",
+                "cantidad": 1,
+                "precio_unitario": 2850.0,
+                "subtotal": 2850.0
+            },
+            {
+                "codigo": "7891024034095",
+                "descripcion": "COLGATE KIDS 50G",
+                "cantidad": 1,
+                "precio_unitario": 1850.0,
+                "subtotal": 1850.0
+            }
+        ],
+        "monto": 7550.0,
+        "numero_ticket": "21-01-2025-3",
+        "pagos": [
+            {
+                "metodo": "Cr\u00e9dito",
+                "monto": 6795.0
+            }
+        ],
+        "cambio": 0.0,
+        "num_session": "20250121-172049"
+    },
+    {
+        "dia": "24-01-2025",
+        "cajero": "Odelis",
+        "articulos": [
+            {
+                "codigo": "0001",
+                "descripcion": "ALCAPARRA PESABLE",
+                "cantidad": 1,
+                "precio_unitario": 5000.0,
+                "subtotal": 5.0
+            }
+        ],
+        "monto": 5.0,
+        "numero_ticket": "24-01-2025-1",
+        "pagos": [
+            {
+                "metodo": "Efectivo",
+                "monto": 250.0
+            }
+        ],
+        "cambio": 245.0,
+        "num_session": "20250124-171936"
+    },
+    {
+        "dia": "24-01-2025",
+        "cajero": "Odelis",
+        "articulos": [
+            {
+                "codigo": "0001",
+                "descripcion": "ALCAPARRA PESABLE",
+                "cantidad": 1,
+                "precio_unitario": 5000.0,
+                "subtotal": 5.0
+            },
+            {
+                "codigo": "7500435141505",
+                "descripcion": "GILLETE MACH3 SENSITIVE",
+                "cantidad": 1,
+                "precio_unitario": 4000.0,
+                "subtotal": 4000.0
+            }
+        ],
+        "monto": 4005.0,
+        "numero_ticket": "24-01-2025-2",
+        "pagos": [
+            {
+                "metodo": "Efectivo",
+                "monto": 4005.0
+            }
+        ],
+        "cambio": 0.0,
+        "num_session": "20250124-174559"
+    },
+    {
+        "dia": "24-01-2025",
+        "cajero": "Odelis",
+        "articulos": [
+            {
+                "codigo": "0001",
+                "descripcion": "ALCAPARRA PESABLE",
+                "cantidad": 1,
+                "precio_unitario": 5000.0,
+                "subtotal": 5.0
+            },
+            {
+                "codigo": "0001",
+                "descripcion": "ALCAPARRA PESABLE",
+                "cantidad": 100,
+                "precio_unitario": 5000.0,
+                "subtotal": 500.0
+            }
+        ],
+        "monto": 505.0,
+        "numero_ticket": "24-01-2025-3",
+        "pagos": [
+            {
+                "metodo": "Efectivo",
+                "monto": 510.0
+            }
+        ],
+        "cambio": 5.0,
+        "num_session": "20250124-180546"
+    },
+    {
+        "dia": "24-01-2025",
+        "cajero": "Odelis",
+        "articulos": [
+            {
+                "codigo": "7792798005888",
+                "descripcion": "BRAHMA CHOPP 473",
+                "cantidad": 1,
+                "precio_unitario": 1400.0,
+                "subtotal": 1400.0
+            },
+            {
+                "codigo": "7891024034095",
+                "descripcion": "COLGATE KIDS 50G",
+                "cantidad": 1,
+                "precio_unitario": 1850.0,
+                "subtotal": 1850.0
+            }
+        ],
+        "monto": 3250.0,
+        "numero_ticket": "24-01-2025-4",
+        "pagos": [
+            {
+                "metodo": "Transferencia",
+                "monto": 3250.0
+            }
+        ],
+        "cambio": 0.0,
+        "num_session": "20250124-180546"
+    },
+    {
+        "dia": "25-01-2025",
+        "cajero": "Odelis",
+        "articulos": [
+            {
+                "codigo": "0001",
+                "descripcion": "ALCAPARRA PESABLE",
+                "cantidad": 1,
+                "precio_unitario": 5000.0,
+                "subtotal": 5.0
+            }
+        ],
+        "monto": 5.0,
+        "numero_ticket": "25-01-2025-1",
+        "pagos": [
+            {
+                "metodo": "Efectivo",
+                "monto": 5.0
+            }
+        ],
+        "cambio": 0.0,
+        "num_session": "20250125-135321"
+    }
+]

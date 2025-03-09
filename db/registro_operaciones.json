@@ -1,0 +1,72 @@
+[
+    {
+        "num_session": "24-01-2025-2",
+        "tipo": "ingreso",
+        "monto": 41545.0,
+        "nota": "ghvfgf",
+        "fecha": "2025-01-24 17:22:02"
+    },
+    {
+        "num_session": "24-01-2025-2",
+        "tipo": "gasto",
+        "monto": 56464565445.0,
+        "nota": "gvfhgfhgf",
+        "fecha": "2025-01-24 17:22:08"
+    },
+    {
+        "num_session": "24-01-2025-3",
+        "tipo": "ingreso",
+        "monto": 544554.0,
+        "nota": "SDFASDFASD",
+        "fecha": "2025-01-24 17:46:19"
+    },
+    {
+        "num_session": "24-01-2025-3",
+        "tipo": "gasto",
+        "monto": 3425345.0,
+        "nota": "SDDSF",
+        "fecha": "2025-01-24 17:46:26"
+    },
+    {
+        "num_session": "24-01-2025-5",
+        "tipo": "ingreso",
+        "monto": 251454.0,
+        "nota": "asaaa",
+        "fecha": "2025-01-24 18:06:40"
+    },
+    {
+        "num_session": "24-01-2025-5",
+        "tipo": "gasto",
+        "monto": 655454.0,
+        "nota": "qweasdasdas",
+        "fecha": "2025-01-24 18:06:46"
+    },
+    {
+        "num_session": "24-01-2025-5",
+        "tipo": "ingreso",
+        "monto": 54546484.0,
+        "nota": "5sdgfsdf",
+        "fecha": "2025-01-24 19:35:21"
+    },
+    {
+        "num_session": "24-01-2025-5",
+        "tipo": "gasto",
+        "monto": 145454.0,
+        "nota": "fsdgsdg",
+        "fecha": "2025-01-24 19:35:26"
+    },
+    {
+        "num_session": "20250124-180546",
+        "tipo": "ingreso",
+        "monto": 456345634.0,
+        "nota": "fsdfgsdf",
+        "fecha": "2025-01-24 19:36:17"
+    },
+    {
+        "num_session": "20250124-180546",
+        "tipo": "gasto",
+        "monto": 453456345.0,
+        "nota": "fdgsdf",
+        "fecha": "2025-01-24 19:36:21"
+    }
+]
